@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>My Bio Data</h1>
+    <form  method="GET">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">FirstName</label>
+            <input type="text" name="" id="username" placeholder="First Name" required>
+            
+            <label for="password">LastName</label>
+            <input type="text" id="password" placeholder="Last Name">
+            <br>
+            <br>
+            <label for="gender">Male:</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="gender">Female:</label>
+            <input type="radio" id="gender" name="gender">
+            <label for="gender">Other:</label>
+            <input type="radio" id="gender" name="gender">
+            <br>
+            <br>
+            <label for="dob">Date of Birth : </label>
+            <input type="date" id="dob">
+            <br><br>
+            <label for="email">E-Mail : </label>
+            <input type="email" placeholder="xyz@gmail.com">
+            <br><br>
+            <label for="phone">Phone : <b>+</b></label>
+            <input type="tel" name="phone" id="phone" maxlength="2" placeholder="91" size="1">
+            <input type="tel"  name="phone" pattern="[0-9]{10}" id="phone" maxlength="10">
+            <br><br>
+            <label for="height">Height: </label>
+            <input type="digit" placeholder="Height in cms" maxlength="3">
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="school">School Name: </label>
+            <input type="text" placeholder="School Name">
+            <br><br>
+            <label for="class">Class: </label>
+            <input type="number" placeholder="Class" min="1" max="12">th
+            <br><br>
+            <label for="streams">Stream </label>
+            <input list="stream" id="streams" placeholder="Stream">
+            <datalist  id="stream">
+                <option value="Maths">Maths</option>
+                <option value="Biology">Biology</option>
+                <option value="Commerce">Commerce</option>
+            </datalist> 
+
+
+            <br><br>
+            <label for="file">Marksheet: </label>
+            <input type="file" name="file" id="file">
+            
+            <!-- <label for="bio">bio</label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="5"></textarea> -->
+
+        </fieldset>
+
+        <button>Submit</button>
+
+
+
+    </form>
+</body>
+</html>
